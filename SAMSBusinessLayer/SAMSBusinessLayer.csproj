@@ -1,0 +1,904 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C68BCE0D-BE6D-4C8C-A46B-55A432B8F3E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAMSBusinessLayer</RootNamespace>
+    <AssemblyName>SAMSBusinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AccountHeadController.cs" />
+    <Compile Include="Classes\AppliedPromotionCol_Controller.cs" />
+    <Compile Include="Classes\AppliedPromotion_Collection.cs" />
+    <Compile Include="Classes\ApprovalHierarchyController.cs" />
+    <Compile Include="Classes\AssignLocation.cs" />
+    <Compile Include="Classes\BasketCollection_Controller.cs" />
+    <Compile Include="Classes\BasketController.cs" />
+    <Compile Include="Classes\BasketDetailCollection_Controller.cs" />
+    <Compile Include="Classes\Basket_Collection.cs" />
+    <Compile Include="Classes\Basket_Detail_Collection.cs" />
+    <Compile Include="Classes\BrandAssignmentController.cs" />
+    <Compile Include="Classes\ChequeEntryController.cs" />
+    <Compile Include="Classes\ClaimDetailCol_Controller.cs" />
+    <Compile Include="Classes\ClaimDetail_Collection.cs" />
+    <Compile Include="Classes\ClaimMasterCol_Controller.cs" />
+    <Compile Include="Classes\ClaimMaster_Collection.cs" />
+    <Compile Include="Classes\CompanyController.cs" />
+    <Compile Include="Classes\ControllerAssignLocations.cs" />
+    <Compile Include="Classes\ControllerCustomerCreditLimit.cs" />
+    <Compile Include="Classes\ControllerDistributorType.cs" />
+    <Compile Include="Classes\ControllerPaysical.cs" />
+    <Compile Include="Classes\ControllerWarehouse.cs" />
+    <Compile Include="Classes\CreateCustomerController.cs" />
+    <Compile Include="Classes\CreateGroupController.cs" />
+    <Compile Include="Classes\CreateLoginIDController.cs" />
+    <Compile Include="Classes\CreateUserController.cs" />
+    <Compile Include="Classes\CustomerDataController.cs" />
+    <Compile Include="Classes\CustomerHierarchy.cs" />
+    <Compile Include="Classes\CustomerProximityController.cs" />
+    <Compile Include="Classes\CustomerTypeController.cs" />
+    <Compile Include="Classes\DBBackupController.cs" />
+    <Compile Include="Classes\DeviceController.cs" />
+    <Compile Include="Classes\DistributorAreaController.cs" />
+    <Compile Include="Classes\DistributorController.cs" />
+    <Compile Include="Classes\DistributorRouteController.cs" />
+    <Compile Include="Classes\DistributorSettingsController.cs" />
+    <Compile Include="Classes\DistributorSKUCodesController.cs" />
+    <Compile Include="Classes\DistributorTerritoryController.cs" />
+    <Compile Include="Classes\DistributorTownController.cs" />
+    <Compile Include="Classes\DistributorUserController.cs" />
+    <Compile Include="Classes\Distributor_UserController.cs" />
+    <Compile Include="Classes\Dist_Terr_AreaController.cs" />
+    <Compile Include="Classes\DocumentPrintController.cs" />
+    <Compile Include="Classes\GeoHierarchyController.cs" />
+    <Compile Include="Classes\GiftRequestController.cs" />
+    <Compile Include="Classes\HHPostingController.cs" />
+    <Compile Include="Classes\LedgerController.cs" />
+    <Compile Include="Classes\LegendController.cs" />
+    <Compile Include="Classes\LocationController.cs" />
+    <Compile Include="Classes\LoginController.cs" />
+    <Compile Include="Classes\LoyaltyPointsController.cs" />
+    <Compile Include="Classes\MenuController.cs" />
+    <Compile Include="Classes\MerchandizingItemsController.cs" />
+    <Compile Include="Classes\ModuleController.cs" />
+    <Compile Include="Classes\OrderEntryController.cs" />
+    <Compile Include="Classes\OrderGridCollection_Controller.cs" />
+    <Compile Include="Classes\OrderGrid_Collection.cs" />
+    <Compile Include="Classes\OrderInfoCollection_Controller.cs" />
+    <Compile Include="Classes\OrderInfo_Collection.cs" />
+    <Compile Include="Classes\PromoOffersCol_Controller.cs" />
+    <Compile Include="Classes\PromoOffers_Collection.cs" />
+    <Compile Include="Classes\PromotionCollections_Controller.cs" />
+    <Compile Include="Classes\PromotionController.cs" />
+    <Compile Include="Classes\PromotionCustomerType_Collection.cs" />
+    <Compile Include="Classes\PromotionCustomerVolClass_Collection.cs" />
+    <Compile Include="Classes\PromotionCustTypeColl_Controller.cs" />
+    <Compile Include="Classes\PromotionCustVolclassColl_Controller.cs" />
+    <Compile Include="Classes\PromotionForAllController.cs" />
+    <Compile Include="Classes\PromotionForCollection_Controller.cs" />
+    <Compile Include="Classes\PromotionForCustColl_Controller.cs" />
+    <Compile Include="Classes\PromotionForCustomer_Collection.cs" />
+    <Compile Include="Classes\PromotionFor_Collection.cs" />
+    <Compile Include="Classes\PromotionOfferColl_Controller.cs" />
+    <Compile Include="Classes\PromotionOfferController.cs" />
+    <Compile Include="Classes\PromotionOffer_Collection.cs" />
+    <Compile Include="Classes\Promotion_Collection.cs" />
+    <Compile Include="Classes\PurchaseController.cs" />
+    <Compile Include="Classes\Rights.cs" />
+    <Compile Include="Classes\RightsCollection.cs" />
+    <Compile Include="Classes\RightsController.cs" />
+    <Compile Include="Classes\RoleManagementController.cs" />
+    <Compile Include="Classes\RouteAssignmentController.cs" />
+    <Compile Include="Classes\RptInventoryController.cs" />
+    <Compile Include="Classes\SaleForceTerritoryAssignController.cs" />
+    <Compile Include="Classes\SaleInvoiceDetail_Collection.cs" />
+    <Compile Include="Classes\SaleInvoiceDetail_Controller.cs" />
+    <Compile Include="Classes\SaleInvoicePromotion_Collection.cs" />
+    <Compile Include="Classes\SaleInvoicePromotion_Controller.cs" />
+    <Compile Include="Classes\SaleOrderDetailCol_Controller.cs" />
+    <Compile Include="Classes\SaleOrderDetail_Collection.cs" />
+    <Compile Include="Classes\SaleOrderMasterCol_Controller.cs" />
+    <Compile Include="Classes\SaleOrderMaster_Collection.cs" />
+    <Compile Include="Classes\SaleOrderPromoCol_Controller.cs" />
+    <Compile Include="Classes\SaleOrderPromotion_Collection.cs" />
+    <Compile Include="Classes\SalesForceAreaAssignment.cs" />
+    <Compile Include="Classes\SalesForceAreaAssignmentController.cs" />
+    <Compile Include="Classes\SAMSCodesController.cs" />
+    <Compile Include="Classes\SAMSettingController.cs" />
+    <Compile Include="Classes\SAMSSettingController.cs" />
+    <Compile Include="Classes\SAMSUserController.cs" />
+    <Compile Include="Classes\SchemeCollection_Controller.cs" />
+    <Compile Include="Classes\SchemeController.cs" />
+    <Compile Include="Classes\Scheme_Collection.cs" />
+    <Compile Include="Classes\SETTINGS_TABLE_Controller.cs" />
+    <Compile Include="Classes\SKUBatchesColl_Controller.cs" />
+    <Compile Include="Classes\SKUBatches_Collection.cs" />
+    <Compile Include="Classes\SkuController.cs" />
+    <Compile Include="Classes\SKUGroupCol_Cntrlr.cs" />
+    <Compile Include="Classes\SKUGroupController.cs" />
+    <Compile Include="Classes\SKUGroup_Collection.cs" />
+    <Compile Include="Classes\SkuHierarchyController.cs" />
+    <Compile Include="Classes\SKULevelCreditLimitController.cs" />
+    <Compile Include="Classes\SKULevelCreditLimit_Collection.cs" />
+    <Compile Include="Classes\SKUPriceDetailController.cs" />
+    <Compile Include="Classes\SKUPricesCol_Controller.cs" />
+    <Compile Include="Classes\SKUPrices_Collection.cs" />
+    <Compile Include="Classes\SKUsController.cs" />
+    <Compile Include="Classes\SKU_Collection.cs" />
+    <Compile Include="Classes\SKU_Collection_Controller.cs" />
+    <Compile Include="Classes\SKU_MAPPINGController.cs" />
+    <Compile Include="Classes\Sku_PricesController.cs" />
+    <Compile Include="Classes\SlabsController.cs" />
+    <Compile Include="Classes\SLASHCodesController.cs" />
+    <Compile Include="Classes\spInsertTRANSFER_MASTER.cs" />
+    <Compile Include="Classes\spSelectSALESFORCE_COMPANY.cs" />
+    <Compile Include="Classes\spSelectSCH_PARAMETER.cs" />
+    <Compile Include="Classes\spSelectTRANSFER_MASTER.cs" />
+    <Compile Include="Classes\spUpdateTRANSFER_MASTER.cs" />
+    <Compile Include="Classes\SynchronizationController.cs" />
+    <Compile Include="Classes\SYNC_LOGController.cs" />
+    <Compile Include="Classes\TargetController.cs" />
+    <Compile Include="Classes\TransferDocumentControl.cs" />
+    <Compile Include="Classes\TransferSku.cs" />
+    <Compile Include="Classes\uspSelectOrderStatus.cs" />
+    <Compile Include="Classes\UspSelectOutletList.cs" />
+    <Compile Include="Classes\uspSelectPromotionWithSchemes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\DataSet1.cs" />
+    <Compile Include="Reports\DsReport.cs" />
+    <Compile Include="Reports\DsReport2.cs" />
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpBankDepositSlipDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpBankDepositSlipDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpBillCustomerWiseReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpBillCustomerWiseReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpBookingSupplyMonitoring.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpBookingSupplyMonitoring.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpBookingVsExecutionSKUWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpBookingVsExecutionSKUWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpBusinessAnalysis.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpBusinessAnalysis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpChequeDetailReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpChequeDetailReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpChequeDetailReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpChequeDetailReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpClaimManagmentDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpClaimManagmentDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpClaimSlip.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpClaimSlip.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCreditAgingOrderBookerWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCreditAgingOrderBookerWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCreditAgingReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCreditAgingReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerClassfication.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCustomerClassfication.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerClassificationDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCustomerClassificationDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerCreditSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCustomerCreditSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerDSR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCustomerDSR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerLedger.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCustomerLedger.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCustomerList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerMonthlySales.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCustomerMonthlySales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerProductWiseDSR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCustomerProductWiseDSR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerSaleReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCustomerSaleReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerStatment.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCustomerStatment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerWiseSelling.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpCustomerWiseSelling.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpDailyBankDeposit.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpDailyBankDeposit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpDailyPurchaseTransfer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpDailyPurchaseTransfer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpDeliveryChallan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpDeliveryChallan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpDistributorReconcilation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpDistributorReconcilation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpDSUView.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpDSUView.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpGrossProfitReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpGrossProfitReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpLedgerView.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpLedgerView.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpLoadPass.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpLoadPass.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpLoadPassCredit.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpLoadPassCredit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpLoadPassDM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpLoadPassDM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpLoadPassSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpLoadPassSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpOrderBookerSheet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpOrderBookerSheet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpOrderExcusionSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpOrderExcusionSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpOutletwiseSale.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpOutletwiseSale.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPaymentReceiving.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPaymentReceiving.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPettyCaahSummery.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPettyCaahSummery.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPetyCashSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPetyCashSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPhysicalStockTaking.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPhysicalStockTaking.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPriceList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPriceList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPriceListmgd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPriceListmgd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPrincipalWiseExp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPrincipalWiseExp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPrintDocument.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPrintDocument.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPrintDSR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPrintDSR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPrintDSROld.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPrintDSROld.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPrintUSDInvoice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPrintUSDInvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPromotion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPromotion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpPurchaseDocument.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpPurchaseDocument.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpReconciplationReport%28Old%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpReconciplationReport%28Old%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpReconciplationReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpReconciplationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpSalePersonDSR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpSalePersonDSR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpSalePersonDSR2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpSalePersonDSR2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpSaleReport_ProductWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpSaleReport_ProductWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpStockValuationDetailAllLocations.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpStockValuationDetailAllLocations.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpStockValuationDetailSingleLocations.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpStockValuationDetailSingleLocations.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpStockValuationSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpStockValuationSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpStockValuationSummaryOld.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpStockValuationSummaryOld.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpTownWiseSales.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpTownWiseSales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpTradeChannelReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpTradeChannelReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpTransferIn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpTransferIn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpTransferInOutValues.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpTransferInOutValues.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.CrpVolumeSalesDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.CrpVolumeSalesDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.crpVoucherView.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.crpVoucherView.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.RegionWiseSaleReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.RegionWiseSaleReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.RptPhysicalStockSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.RptPhysicalStockSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.rptZEGRISH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.rptZEGRISH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SAMS.BusinessLayer.Reports.StockReConsilation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAMS.BusinessLayer.Reports.StockReConsilation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpBankDepositSlipDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpBankDepositSlipDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpBillCustomerWiseReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpBillCustomerWiseReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpBookingSupplyMonitoring.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpBookingSupplyMonitoring.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpBookingVsExecutionSKUWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpBookingVsExecutionSKUWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpBusinessAnalysis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpBusinessAnalysis.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpChequeDetailReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpChequeDetailReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpChequeDetailReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpChequeDetailReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpClaimManagmentDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpClaimManagmentDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpClaimSlip.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpClaimSlip.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCreditAgingOrderBookerWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCreditAgingOrderBookerWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCreditAgingReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCreditAgingReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerClassfication.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCustomerClassfication.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerClassificationDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCustomerClassificationDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerCreditSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCustomerCreditSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerDSR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCustomerDSR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerLedger.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCustomerLedger.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCustomerList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerMonthlySales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCustomerMonthlySales.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerProductWiseDSR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCustomerProductWiseDSR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerSaleReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCustomerSaleReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerStatment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCustomerStatment.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpCustomerWiseSelling.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpCustomerWiseSelling.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpDailyBankDeposit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpDailyBankDeposit.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpDailyPurchaseTransfer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpDailyPurchaseTransfer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpDeliveryChallan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpDeliveryChallan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpDistributorReconcilation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpDistributorReconcilation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpDSUView.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpDSUView.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpGrossProfitReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpGrossProfitReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpLedgerView.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpLedgerView.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpLoadPass.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpLoadPass.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpLoadPassCredit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpLoadPassCredit.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpLoadPassDM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpLoadPassDM.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpLoadPassSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpLoadPassSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpOrderBookerSheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpOrderBookerSheet.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpOrderExcusionSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpOrderExcusionSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpOutletwiseSale.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpOutletwiseSale.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPaymentReceiving.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPaymentReceiving.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPettyCaahSummery.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPettyCaahSummery.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPetyCashSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPetyCashSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPhysicalStockTaking.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPhysicalStockTaking.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPriceList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPriceList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPriceListmgd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPriceListmgd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPrincipalWiseExp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPrincipalWiseExp.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPrintDocument.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPrintDocument.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPrintDSR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPrintDSR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPrintDSROld.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPrintDSROld.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPrintUSDInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPrintUSDInvoice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPromotion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPromotion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpPurchaseDocument.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpPurchaseDocument.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpReconciplationReport%28Old%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpReconciplationReport%28Old%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpReconciplationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpReconciplationReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpSalePersonDSR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpSalePersonDSR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpSalePersonDSR2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpSalePersonDSR2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpSaleReport_ProductWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpSaleReport_ProductWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpStockValuationDetailAllLocations.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpStockValuationDetailAllLocations.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpStockValuationDetailSingleLocations.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpStockValuationDetailSingleLocations.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpStockValuationSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpStockValuationSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpStockValuationSummaryOld.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpStockValuationSummaryOld.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpTownWiseSales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpTownWiseSales.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpTradeChannelReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpTradeChannelReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpTransferIn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpTransferIn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpTransferInOutValues.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpTransferInOutValues.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.CrpVolumeSalesDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.CrpVolumeSalesDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.crpVoucherView.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.crpVoucherView.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.RegionWiseSaleReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.RegionWiseSaleReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.RptPhysicalStockSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.RptPhysicalStockSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.rptZEGRISH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.rptZEGRISH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SAMS.BusinessLayer.Reports.StockReConsilation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SAMS.BusinessLayer.Reports.StockReConsilation.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SAMSCommon\SAMSCommon.csproj">
+      <Project>{0D5EFAE5-3B65-4682-9CB2-6231C4878B5F}</Project>
+      <Name>SAMSCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAMSDataAccessLayer\SAMSDataAccessLayer.csproj">
+      <Project>{636740E6-0527-4736-B557-5FC34B7EECEF}</Project>
+      <Name>SAMSDataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SAMSDatabaseLayer\SAMSDatabaseLayer.csproj">
+      <Project>{C90EF98D-2249-4B9C-825B-8002252C49BE}</Project>
+      <Name>SAMSDatabaseLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

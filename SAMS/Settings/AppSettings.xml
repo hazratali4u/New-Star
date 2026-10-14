@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppSettings>
+
+
+  <Server>DESKTOP-I38J8IA</Server>
+  <DBName>SAMS-NewStar</DBName>
+  <DBUser>sa</DBUser>
+  <DBPassword>123</DBPassword>
+  <DBAuthentication>MSDE</DBAuthentication>
+
+
+
+  <!--<Server>DBG</Server>
+  <DBName>SAMS-NewStar</DBName>
+  <DBUser>Builds</DBUser>
+  <DBPassword>PakistanisLove</DBPassword>
+  <DBAuthentication>MSDE</DBAuthentication>-->
+  
+</AppSettings>
+

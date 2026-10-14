@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SAMS", "SAMS", "{07B365F0-F550-4948-8B23-1D4BAC9DB612}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{C68BCE0D-BE6D-4C8C-A46B-55A432B8F3E9}|BusinessLayer.dll;{0D5EFAE5-3B65-4682-9CB2-6231C4878B5F}|Common.dll;{636740E6-0527-4736-B557-5FC34B7EECEF}|DataAccessLayer.dll;{C90EF98D-2249-4B9C-825B-8002252C49BE}|DatabaseLayer.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/SAMS"
+		Debug.AspNetCompiler.PhysicalPath = "SAMS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SAMS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SAMS"
+		Release.AspNetCompiler.PhysicalPath = "SAMS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SAMS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58268"
+		SlnRelativePath = "SAMS\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAMSBusinessLayer", "SAMSBusinessLayer\SAMSBusinessLayer.csproj", "{C68BCE0D-BE6D-4C8C-A46B-55A432B8F3E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAMSCommon", "SAMSCommon\SAMSCommon.csproj", "{0D5EFAE5-3B65-4682-9CB2-6231C4878B5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAMSDataAccessLayer", "SAMSDataAccessLayer\SAMSDataAccessLayer.csproj", "{636740E6-0527-4736-B557-5FC34B7EECEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAMSDatabaseLayer", "SAMSDatabaseLayer\SAMSDatabaseLayer.csproj", "{C90EF98D-2249-4B9C-825B-8002252C49BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07B365F0-F550-4948-8B23-1D4BAC9DB612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B365F0-F550-4948-8B23-1D4BAC9DB612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B365F0-F550-4948-8B23-1D4BAC9DB612}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B365F0-F550-4948-8B23-1D4BAC9DB612}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C68BCE0D-BE6D-4C8C-A46B-55A432B8F3E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68BCE0D-BE6D-4C8C-A46B-55A432B8F3E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68BCE0D-BE6D-4C8C-A46B-55A432B8F3E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68BCE0D-BE6D-4C8C-A46B-55A432B8F3E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D5EFAE5-3B65-4682-9CB2-6231C4878B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5EFAE5-3B65-4682-9CB2-6231C4878B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5EFAE5-3B65-4682-9CB2-6231C4878B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5EFAE5-3B65-4682-9CB2-6231C4878B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{636740E6-0527-4736-B557-5FC34B7EECEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{636740E6-0527-4736-B557-5FC34B7EECEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{636740E6-0527-4736-B557-5FC34B7EECEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{636740E6-0527-4736-B557-5FC34B7EECEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C90EF98D-2249-4B9C-825B-8002252C49BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C90EF98D-2249-4B9C-825B-8002252C49BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C90EF98D-2249-4B9C-825B-8002252C49BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C90EF98D-2249-4B9C-825B-8002252C49BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

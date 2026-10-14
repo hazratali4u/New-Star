@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D5EFAE5-3B65-4682-9CB2-6231C4878B5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAMSCommon</RootNamespace>
+    <AssemblyName>SAMSCommon</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="FTP">
+      <HintPath>..\..\..\Adams\Application\SAMSCommon\bin\Debug\FTP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ApplicationType.cs" />
+    <Compile Include="Classes\clsCheckedListItems.cs" />
+    <Compile Include="Classes\clsDataSetUtil.cs" />
+    <Compile Include="Classes\clsDateTimeUtil.cs" />
+    <Compile Include="Classes\clsDetailListItems.cs" />
+    <Compile Include="Classes\clsFileUtil.cs" />
+    <Compile Include="Classes\clsFormUtil.cs" />
+    <Compile Include="Classes\clsListItems.cs" />
+    <Compile Include="Classes\clsMaskUtil.cs" />
+    <Compile Include="Classes\clsStringUtil.cs" />
+    <Compile Include="Classes\clsWebFormUtil.cs" />
+    <Compile Include="Classes\Compression.cs" />
+    <Compile Include="Classes\Configuration.cs" />
+    <Compile Include="Classes\Constants.cs" />
+    <Compile Include="Classes\ConvertDate.cs" />
+    <Compile Include="Classes\DataControl.cs" />
+    <Compile Include="Classes\DataSetToExcel.cs" />
+    <Compile Include="Classes\DateTimeResolution.cs" />
+    <Compile Include="Classes\Encryption.cs" />
+    <Compile Include="Classes\Enums.cs" />
+    <Compile Include="Classes\ExceptionPublisher.cs" />
+    <Compile Include="Classes\General.cs" />
+    <Compile Include="Classes\Language.cs" />
+    <Compile Include="Classes\MessageMaker.cs" />
+    <Compile Include="Classes\NumberCaseInsensitiveComparer.cs" />
+    <Compile Include="Classes\Pack.cs" />
+    <Compile Include="Classes\REPORT_OPTIONS.cs" />
+    <Compile Include="Classes\SAMSException.cs" />
+    <Compile Include="Classes\SAMSUserException.cs" />
+    <Compile Include="Classes\WebMsgBox.cs" />
+    <Compile Include="Classes\XmlUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
